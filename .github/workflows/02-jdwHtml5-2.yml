@@ -18,7 +18,7 @@ jobs:
             https://github.com/jdwinfodesign/com.jdwinfodesign.html5-2/archive/main.zip
             https://github.com/jdwinfodesign/com.jdwinfodesign.preprocess/archive/main.zip
           input: simple.ditamap
-          transtype: html5
+          transtype: jdwinfodesignHtml5-2
           output-path: out
           
       - name: Upload DITA Output to a ZIP file
