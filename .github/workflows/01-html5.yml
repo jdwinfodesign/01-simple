@@ -15,6 +15,8 @@ jobs:
         with:
           plugins: |
             https://github.com/jdwinfodesign/com.jdwinfodesign.doctypes/archive/main.zip
+            https://github.com/jdwinfodesign/com.jdwinfodesign.html5-2/archive/main.zip
+            https://github.com/jdwinfodesign/com.jdwinfodesign.preprocess/archive/main.zip
           input: simple.ditamap
           transtype: html5
           output-path: out
