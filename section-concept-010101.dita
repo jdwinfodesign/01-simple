@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "urn:pubid:jdwinfodesign.com:doctypes:dita:dtd:concept" "concept.dtd">
+<concept id="section-concept-010101">
+  <title>Concept-010101</title>
+  <shortdesc/>
+  <conbody>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.</p>
+    <fig>
+      <title>A picture in a grandchild topic</title>
+      <image href="images/20210720_103919.jpg">
+        <alt>A picture</alt>
+      </image>
+    </fig>
+    <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.</p>
+    <table frame="all" rowsep="1" colsep="1">
+      <title>RGB Colors, primary and seconday</title>
+      <tgroup cols="3">
+        <colspec colname="c1" colnum="1" colwidth="1*"/>
+        <colspec colname="c2" colnum="2" colwidth="1*"/>
+        <colspec colname="c3" colnum="3" colwidth="1*"/>
+        <thead>
+          <row>
+            <entry>Primary 1</entry>
+            <entry>Primary 2</entry>
+            <entry>Secondary</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Red</entry>
+            <entry>Green</entry>
+            <entry>Yellow</entry>
+          </row>
+          <row>
+            <entry>Green</entry>
+            <entry>Blue</entry>
+            <entry>Cyan</entry>
+          </row>
+          <row>
+            <entry>Blue</entry>
+            <entry>Red</entry>
+            <entry>Magenta</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+      anim id est laborum.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, <fig>
+        <title>A figure in a paragraph in a grandchild topic</title>
+        <image href="images/20210720_104344.jpg">
+          <alt>A figure in a paragraph</alt>
+        </image>
+      </fig>sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.<table frame="all" rowsep="1" colsep="1">
+        <title>CMYK Colors, primary and seconday</title>
+        <tgroup cols="3">
+          <colspec colname="c1" colnum="1" colwidth="1*"/>
+          <colspec colname="c2" colnum="2" colwidth="1*"/>
+          <colspec colname="c3" colnum="3" colwidth="1*"/>
+          <thead>
+            <row>
+              <entry>Primary 1</entry>
+              <entry>Primary 2</entry>
+              <entry>Secondary</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Cyan</entry>
+              <entry>Magenta</entry>
+              <entry>Blue</entry>
+            </row>
+            <row>
+              <entry>Magenta</entry>
+              <entry>Yellow</entry>
+              <entry>Red</entry>
+            </row>
+            <row>
+              <entry>Yellow</entry>
+              <entry>Cyan</entry>
+              <entry>Green</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table></p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+      anim id est laborum.</p>
+  </conbody>
+</concept>

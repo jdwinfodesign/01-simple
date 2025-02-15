@@ -1,0 +1,26 @@
+name: CI
+'on':
+  push:
+    branches:
+      - 01-html5
+jobs:
+  build-dita:
+    name: Build DITA
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Build HTML5
+        uses: dita-ot/dita-ot-action@master
+        with:
+          plugins: |
+            https://github.com/jdwinfodesign/com.jdwinfodesign.doctypes/archive/main.zip
+          input: simple.ditamap
+          transtype: html5
+          output-path: out
+          
+      - name: Upload DITA Output to a ZIP file
+        uses: actions/upload-artifact@v4
+        with:
+          name: dita-artifact
+          path: 'out'
