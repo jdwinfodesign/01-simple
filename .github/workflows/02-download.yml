@@ -2,7 +2,7 @@ name: CI
 'on':
   push:
     branches:
-      - main
+      - 02-download
 jobs:
   build-dita:
     name: Build DITA
@@ -26,3 +26,8 @@ jobs:
         with:
           name: dita-artifact
           path: 'out'
+        
+        - name: Print the final result
+        shell: bash
+        run: |
+          echo GITHUB_WORKSPACE: $GITHUB_WORKSPACE
