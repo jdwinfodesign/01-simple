@@ -30,3 +30,4 @@ jobs:
         shell: bash
         run: |
           echo GITHUB_WORKSPACE: $GITHUB_WORKSPACE
+          ls
