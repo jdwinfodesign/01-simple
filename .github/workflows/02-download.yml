@@ -29,5 +29,5 @@ jobs:
       - name: Print the final result
         shell: bash
         run: |
-          echo GITHUB_WORKSPACE: $GITHUB_WORKSPACE
+          echo $GITHUB_WORKSPACE: $GITHUB_WORKSPACE
           ls
