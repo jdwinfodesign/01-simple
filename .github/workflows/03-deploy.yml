@@ -4,8 +4,8 @@ name: CI
     branches:
       - 03-deploy
 jobs:
-  permissions: write-all
   build-dita:
+  permissions: write-all
     name: Build DITA
     runs-on: ubuntu-latest
     steps:
