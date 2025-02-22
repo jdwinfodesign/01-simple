@@ -2,7 +2,7 @@ name: CI
 'on':
   push:
     branches:
-      - 02-download
+      - 03-deploy
 jobs:
   build-dita:
     name: Build DITA
@@ -25,16 +25,9 @@ jobs:
         with:
           name: dita-artifact
           path: 'out'
-      -  name: make directory
-         run: mkdir foo
-      - name: Download artifact
-        uses: actions/download-artifact@v4
+      - name: Deploy DITA Output to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          name: dita-artifact
-      - name: Display structure of downloaded files
-        run: ls -R
-      - name: Print the final result
-        shell: bash
-        run: |
-          echo $GITHUB_WORKSPACE: $GITHUB_WORKSPACE
-          ls
+          GITHUB_TOKEN: $
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: out # The folder the action should deploy.
