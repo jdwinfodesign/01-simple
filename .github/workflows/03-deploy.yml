@@ -28,6 +28,6 @@ jobs:
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          DEPLOY_SECRET: ${{ secrets.DeploySecret }}
+          token: ${{ secrets.DeploySecret }}
           BRANCH: gh-pages
-          FOLDER: 'out'
+          FOLDER: out
