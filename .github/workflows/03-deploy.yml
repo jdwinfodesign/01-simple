@@ -26,9 +26,9 @@ jobs:
           name: dita-artifact
           path: 'out'
       - name: Deploy
-        permissions: write-all
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          permissions: write-all
           token: ${{ secrets.NEWSECRET }}
           BRANCH: gh-pages
           FOLDER: out
