@@ -30,4 +30,4 @@ jobs:
         with:
           DEPLOY_SECRET: ${{ secrets.DeploySecret }}
           BRANCH: gh-pages
-          FOLDER: out
+          FOLDER: 'out'
