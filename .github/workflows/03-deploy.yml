@@ -25,7 +25,7 @@ jobs:
         with:
           name: dita-artifact
           path: 'out'
-      - name: deploy
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.NEWSECRET }}
