@@ -28,6 +28,5 @@ jobs:
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          TOKEN: ${{github.token}}
           BRANCH: gh-pages
           FOLDER: out
