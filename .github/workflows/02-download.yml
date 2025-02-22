@@ -2,7 +2,7 @@ name: CI
 'on':
   push:
     branches:
-      - main
+      - 02-download
 jobs:
   build-dita:
     name: Build DITA
@@ -20,9 +20,21 @@ jobs:
           input: simple.ditamap
           transtype: jdwinfodesignHtml5-2
           output-path: out
-          
       - name: Upload DITA Output to a ZIP file
         uses: actions/upload-artifact@v4
         with:
           name: dita-artifact
           path: 'out'
+      -  name: make directory
+         run: mkdir foo
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dita-artifact
+      - name: Display structure of downloaded files
+        run: ls -R
+      - name: Print the final result
+        shell: bash
+        run: |
+          echo $GITHUB_WORKSPACE: $GITHUB_WORKSPACE
+          ls
