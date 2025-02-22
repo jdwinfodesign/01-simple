@@ -25,3 +25,7 @@ jobs:
         with:
           name: dita-artifact
           path: 'out'
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: out
