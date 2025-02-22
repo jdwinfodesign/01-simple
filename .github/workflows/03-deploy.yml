@@ -28,7 +28,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          permissions: write-all
-          token: ${{ secrets.NEWSECRET }}
           BRANCH: gh-pages
           FOLDER: out
