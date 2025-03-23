@@ -1,1 +1,1 @@
-A minimal set of topics.
+A minimal set of topics. DITA topics.
