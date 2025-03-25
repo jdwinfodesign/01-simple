@@ -2,7 +2,7 @@
 <!DOCTYPE bookmap PUBLIC "urn:pubid:jdwinfodesign.com:doctypes:dita:dtd:bookmap" "bookmap.dtd">
 <bookmap>
   <booktitle>
-    <mainbooktitle>User Guide Book</mainbooktitle>
+    <mainbooktitle>User Guide Bookmap</mainbooktitle>
   </booktitle>
   <chapter navtitle="Concepts" href="concepts.dita">
     <topicref href="section-concept-01.dita">
