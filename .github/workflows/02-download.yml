@@ -11,7 +11,7 @@ jobs:
       - name: Git checkout
         uses: actions/checkout@v2
       - name: Build HTML5
-        uses: dita-ot/dita-ot-action@master
+        uses: dita-ot/dita-ot-action@develop
         with:
           plugins: |
             https://github.com/jdwinfodesign/com.jdwinfodesign.doctypes/archive/main.zip
