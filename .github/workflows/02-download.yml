@@ -26,7 +26,6 @@ jobs:
           name: dita-artifact
           path: 'out'
       - name: Download artifact
-        run: mkdir foo
         uses: actions/download-artifact@v4
         with:
           name: dita-artifact
