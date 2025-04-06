@@ -1,0 +1,32 @@
+name: CI
+'on':
+  push:
+    branches:
+      - 03-deploy
+jobs:
+  build-dita:
+    name: Build DITA
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Build HTML5
+        uses: dita-ot/dita-ot-action@4.3
+        with:
+          plugins: |
+            https://github.com/jdwinfodesign/com.jdwinfodesign.doctypes/archive/main.zip
+            https://github.com/jdwinfodesign/com.jdwinfodesign.html5-2/archive/main.zip
+            https://github.com/jdwinfodesign/com.jdwinfodesign.preprocess/archive/main.zip
+          input: simple.ditamap
+          transtype: jdwinfodesignHtml5-2
+          output-path: out
+      - name: Upload DITA Output to a ZIP file
+        uses: actions/upload-artifact@v4
+        with:
+          name: dita-artifact
+          path: 'out'
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          BRANCH: gh-pages
+          FOLDER: out
