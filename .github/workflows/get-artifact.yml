@@ -2,7 +2,7 @@ name: CI
 'on':
   push:
     branches:
-      - 02-download
+      - get-artifact
 jobs:
   build-dita:
     name: Build DITA
@@ -11,7 +11,7 @@ jobs:
       - name: Git checkout
         uses: actions/checkout@v2
       - name: Build HTML5
-        uses: dita-ot/dita-ot-action@master
+        uses: dita-ot/dita-ot-action@4.3
         with:
           plugins: |
             https://github.com/jdwinfodesign/com.jdwinfodesign.doctypes/archive/main.zip
@@ -25,8 +25,6 @@ jobs:
         with:
           name: dita-artifact
           path: 'out'
-      -  name: make directory
-         run: mkdir foo
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
