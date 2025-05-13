@@ -1,9 +1,9 @@
 name: CI
 'on':
+  workflow_dispatch:
   push:
     branches:
       - 01-dita-artifact
-  workflow_dispatch:
 jobs:
   build-dita:
     name: Build DITA
